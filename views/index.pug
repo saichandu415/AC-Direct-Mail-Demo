@@ -1,0 +1,67 @@
+extends layout
+
+block content
+  body
+    .container
+      h1 Alibaba Cloud DirectMail Demo
+    div.row
+      div.col.s6.offset-s3
+        div.card
+          div.card-tabs
+            ul.tabs.tabs-fixed-width
+              li.tab.col.s6
+                a(href='#signin') 
+                  strong Sign In
+              li.tab.col.s6
+                a(href='#signup') 
+                  strong Sign Up
+          div.card.content.grey.lighten-4
+          #signin.row.tabContent
+            form.col.s12
+              .row
+                .col.s12.input-field.inline
+                  input#email_inline.validate(type='email')
+                  label(for='email_inline') Email
+                  span.helper-text(
+                  data-error='Please provide valid email'
+                  data-success='Valid Email'
+                )
+                .col.s12.input-field.inline
+                  input#password(type='password')
+                  label(for='password') Password
+            .row
+              button.col.s4.offset-s1.btn.waves-effect.waves-light(
+                type=button
+                onclick='login()'
+              ) Login
+                i.material-icons.right send
+              button.col.s4.offset-s2.waves-effect.waves-teal.btn-flat(
+                type=button
+                onclick='forgotPassword()'
+              ) Forgot Password
+                i.material-icons.right help_outline
+          #signup.row.tabContent
+            form.col.s12
+              .row
+                .col.s6.input-field.inline
+                  input#first_name(type='text')
+                  label(for='first_name') First Name
+                .col.s6.input-field.inline
+                  input#last_name(type='text')
+                  label(for='last_name') Last Name
+                .col.s12.input-field.inline
+                  input#phnNumber(type='number')
+                  label(for='phnNumber') Phone Number
+                .col.s12.input-field.inline
+                  input#email_reg(type='email')
+                  label(for='email_reg') Email
+                .col.s12.input-field.inline
+                  input#password(type='password')
+                  label(for='password') Password
+                button.col.s12.btn.waves-effect.waves-light(
+                  type=button
+                  onclick='register()'
+                ) Register Me !!
+
+  script
+    include ../public/javascripts/utilities.js
