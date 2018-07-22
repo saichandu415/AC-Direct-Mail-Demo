@@ -18,7 +18,8 @@ This application shows a demonstration of using the Alibaba Cloud Direct Mail Se
 ## Bugs & Feedback
 For bugs, questions and discussions please use the [Github Issues.](https://github.com/saichandu415/AC-Direct-Mail-Demo/issues)
 
-## Snapshots
+## Demonstration
+<img src="https://github.com/saichandu415/AC-Direct-Mail-Demo/blob/master/DirectMailDemo.gif"/>
 
 ## License
 
