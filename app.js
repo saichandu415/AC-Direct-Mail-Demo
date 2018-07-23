@@ -4,7 +4,6 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var nodemailer = require('nodemailer');
-
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
@@ -29,12 +28,11 @@ var transporter = nodemailer.createTransport({
   "secureConnection": false, // use SSL
   "auth": {
     "user": 'admin@mail.actestdomain.xyz', // user name
-    "pass": 'AdMin12345'
+    "pass": 'AdMIN12345'
   }
 });
 
 app.post('/sendMail', function (req, res, next) {
-
   var reqBody = req.body;
 
   var mailOptions = {
